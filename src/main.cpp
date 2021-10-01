@@ -1,6 +1,11 @@
 #include <iostream>
-
+#include "logger.hpp"
 int main() {
-    std::cout << "Hello World!" << "\n";
-    return 0;
+  using namespace date;
+  logger::loggerInitialize();
+  logger::logEvent("This is to be logged");
+  bool x = false;
+  LOG(utilfunctions::CurrentTimeNS());
+  std::cout << utilfunctions::CurrentTimeNS() << "\n";
+  return 0;
 }
