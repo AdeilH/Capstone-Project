@@ -2,9 +2,52 @@
 
 This is a starter repo for the Capstone project in the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213).
 
-The Capstone Project gives you a chance to integrate what you've learned throughout this program. This project will become an important part of your portfolio to share with current and future colleagues and employers.
+Working on a mockserver that publishes data based on the requirement of the client. 
 
-In this project, you can build your own C++ application starting with this repo, following the principles you have learned throughout this Nanodegree Program. This project will demonstrate that you can independently create applications using a wide range of C++ features.
+
+## Working So far
+
+1. Client Can Receive Proper Data when it sends One.
+2. Client recieves unauthorized string.
+3. Server Can Send Data and Error.
+4. Internal logger implemented. 
+
+## Future Work
+
+1. Multiple Client
+2. Add More Functionalities specially reading server data from a file or database. 
+3. Multithreading Client Environment when Accepting Connections. 
+
+## Rubric Points Addressed 
+
+### LOOPS, FUNCTIONS, IO
+1. Functions and Control Structures
+2. Writes to a file
+
+### Object Oriented Programming
+
+1. Uses OOP technique
+2. Appropriate Access Specifiers
+3. Uses Member Initialization List in MockServer.cpp
+4. Abstract Class
+5. Templatized Function in Logger
+
+
+### Memory Management
+
+1. Destructors.
+2. References in Functions. 
+
+### Concurrency 
+
+1. Mutex is used in Logger.
+
+
+### Future Goals.
+
+1. Multithreading for Clients
+
+
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
@@ -24,4 +67,4 @@ In this project, you can build your own C++ application starting with this repo,
 2. Update submodules git submodule update --init
 3. Make a build directory in the top level directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
-4. Run it: `./HelloWorld`.
+4. Run it: `./Server`. to start the server and then start Client by `.\Client`
