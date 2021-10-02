@@ -1,11 +1,13 @@
+#include <client.hpp>
 #include <iostream>
+#include <mockserver.hpp>
+
 #include "logger.hpp"
+
 int main() {
-  using namespace date;
-  logger::loggerInitialize();
-  logger::logEvent("This is to be logged");
-  bool x = false;
-  LOG(utilfunctions::CurrentTimeNS());
+  logger::loggerInitialize("./", "sockettest.log");
+  streamingserver server("127.0.0.1", 7777);
+  server.Bind();
   std::cout << utilfunctions::CurrentTimeNS() << "\n";
   return 0;
 }

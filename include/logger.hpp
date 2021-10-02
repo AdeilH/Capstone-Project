@@ -1,3 +1,6 @@
+#ifndef __LOGGER__H__
+#define __LOGGER__H__
+
 #include <fstream>
 #include <iostream>
 #include <mutex>
@@ -43,3 +46,6 @@ class logger {
   }
   ~logger(){m_logHandler.close();};
 };
+
+
+#endif  //!__LOGGER__H__

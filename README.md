@@ -1,4 +1,4 @@
-# CPPND: Capstone Hello World Repo
+# CPPND: Capstone MockServer for test data
 
 This is a starter repo for the Capstone project in the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213).
 
@@ -21,6 +21,7 @@ In this project, you can build your own C++ application starting with this repo,
 ## Basic Build Instructions
 
 1. Clone this repo.
-2. Make a build directory in the top level directory: `mkdir build && cd build`
+2. Update submodules git submodule update --init
+3. Make a build directory in the top level directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
 4. Run it: `./HelloWorld`.
